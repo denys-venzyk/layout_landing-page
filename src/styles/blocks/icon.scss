@@ -1,5 +1,13 @@
 .icon {
+  height: 24px;
+  width: 24px;
+  display: block;
+
   &--phone {
-    background-image: url(../../images/Icons/Icon_phone.png);
+    background-image: url(../images/Icons/Icon_phone.png);
+  }
+
+  &--burger {
+    background-image: url(../images/Icons/icon_burger.png);
   }
 }
