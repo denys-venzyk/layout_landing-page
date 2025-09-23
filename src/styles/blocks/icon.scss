@@ -4,10 +4,14 @@
   display: block;
 
   &--phone {
-    background-image: url(../images/Icons/Icon_phone.png);
+    background-image: url(../images/icons/icon_phone.png);
   }
 
   &--burger {
-    background-image: url(../images/Icons/icon_burger.png);
+    background-image: url(../images/icons/icon_burger.png);
+  }
+
+  &--close {
+    background-image: url(../images/icons/icon_close.png);
   }
 }
