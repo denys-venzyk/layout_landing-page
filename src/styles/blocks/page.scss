@@ -7,6 +7,7 @@
 
   &__body {
     margin: 0;
+    min-width: 320px;
   }
 
   &__menu {
@@ -16,12 +17,15 @@
     right: 0;
 
     opacity: 0;
+    transition: all, 0.3s;
+    transform: translateX(-100%);
     pointer-events: none;
-  }
 
-  &__menu:target {
-    opacity: 1;
-    pointer-events: all;
+      &:target {
+      transform: translateX(0);
+      opacity: 1;
+      pointer-events: all;
+    }
   }
 }
 

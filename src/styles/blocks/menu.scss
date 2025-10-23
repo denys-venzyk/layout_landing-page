@@ -31,11 +31,11 @@
     margin-bottom: 40px;
   }
 
-  &__content {
-    padding-inline: 20px;
-  }
-
   &__top {
     margin-bottom: 32px;
+
+    @include onTablet {
+      margin-bottom: 0;
+    }
   }
 }
