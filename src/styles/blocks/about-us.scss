@@ -5,20 +5,20 @@
   column-gap: 20px;
   grid-template-columns: repeat(var(--columns), 1fr);
 
-  @include onTablet {
+  @include on-tablet {
     --columns: 6;
 
     column-gap: 24px;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     --columns: 12;
   }
 
   &__title {
     grid-column: 1 / -1;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 1 / 4;
     }
   }
@@ -27,8 +27,8 @@
     margin: 0;
     line-height: 140%;
     grid-column: 1 / -1;
-    
-    @include onTablet {
+
+    @include on-tablet {
       grid-column: 4 / 7;
     }
   }
