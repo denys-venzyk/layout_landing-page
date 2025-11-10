@@ -224,30 +224,89 @@
               </article>
             </div>
           </section>
-
-          <section class="about-us" id="login">
-            <h2 class="section-title about-us__title">
-              About us
-            </h2>
-
-            <div class="about-us__content">
-            We’re a London-based tech company on a mission to remove barriers between people and technology. <br>
-              <br>
-            To do this, we’re crafting intuitive, flawlessly connected products that improve our lives without getting in the way.
-            No confusing tech-speak. No silly product names. Just artistry, passion and trust.
-            And products we’re proud to share with our friends and family. Simple. <br>
-              <br>
-            Because beautiful tech shouldn’t be complicated.
-            </div>
-
-          </section>
-
-          <section class="contacts" id="cart">
-            <h2 class="section-title">Contact us</h2>
-          </section>
         </div>
       </div>
+      <div class="category-bottom">
+        <img
+            src="images/background/bottom_background.png"
+            alt="Bottom Background"
+            class="category-bottom__image"
+          >
+      </div>
+      <div class="container">
+        <section class="about-us" id="login">
+          <h2 class="section-title about-us__title">
+            About us
+          </h2>
+
+          <div class="about-us__content">
+            <p class="about-us__paragraph">
+              We’re a London-based tech company on a mission to remove barriers between people and technology. <br>
+              <br>
+              To do this, we’re crafting intuitive, flawlessly connected products that improve our lives without getting in the way.
+              No confusing tech-speak. No silly product names. Just artistry, passion and trust.
+              And products we’re proud to share with our friends and family. Simple.
+              <br>
+              <br>
+              Because beautiful tech shouldn’t be complicated.
+            </p>
+          </div>
+
+        </section>
+
+        <section class="contacts" id="cart">
+          <h2 class="section-title">Contact us</h2>
+          <div class="contacts__content">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              class="contacts__input contacts__input--small contacts__input--hover"
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              class="contacts__input contacts__input--small"
+            >
+            <textarea
+              type="text"
+              name="message"
+              id="message"
+              placeholder="Message"
+              class="contacts__input contacts__input--large"
+            ></textarea>
+            <input
+              type="submit"
+              name="send"
+              id="send"
+              class="contacts__button"
+              value="Send"
+            >
+          </div>
+        </section>
+      </div>
+    </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <h3 class="title">Phone</h3>
+          <a href="tel: +1 234 5555-55-55" class="footer__link">+1 234 5555-55-55</a>
+          <h3 class="title">Email</h3>
+          <a href="email: hello@nothing.com" class="footer__link">hello@nothing.com</a>
+          <h3 class="title">Address</h3>
+          <p class="footer__paragraph">
+            400 first ave.
+            <br>
+            suite 700
+            <br>
+            Minneapolis, MN 55401
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

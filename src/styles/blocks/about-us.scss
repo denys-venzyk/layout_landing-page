@@ -18,11 +18,13 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
+    padding-bottom: 104px;
 
     grid-column: 1 / -1;
 
     @include on-tablet {
       grid-column: 4 / 7;
+      padding-bottom: 120px;
     }
 
     @include on-desktop {

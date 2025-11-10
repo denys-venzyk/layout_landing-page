@@ -1,0 +1,65 @@
+.contacts {
+  &__content {
+    @include page-grid;
+
+    row-gap: 16px;
+  }
+
+  &__input {
+    font-family: "Space Mono", sans-serif;
+    grid-column: 1 / -1;
+    resize: none;
+
+    @include on-desktop {
+      grid-column: 1 / 6;
+    }
+
+    background-color: #F8F8FA;
+    border-radius: 8px;
+    border: 1px solid #F8F8FA;
+    transition-duration: 500ms;
+
+    &::placeholder {
+      color: #7E7E83;
+    }
+
+    &:focus {
+      outline: 1px solid #292929;
+
+      &::placeholder {
+        color: #292929;
+      }
+    }
+
+    &:hover {
+      border: 1px solid #D5D7DE;
+      &::placeholder {
+        color: #292929;
+      }
+    }
+
+    &--small {
+      height: 48px;
+    }
+
+    &--large {
+      height: 148px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__button {
+    @include button-style;
+
+    font-style: Bold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-bottom: 48px;
+    grid-column: 1 / -1;
+
+    @include on-desktop {
+      grid-column: 1 / 6;
+    }
+  }
+}

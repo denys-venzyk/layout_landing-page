@@ -1,0 +1,16 @@
+.category-buttons {
+  @include page-grid;
+  &__button {
+    font-style: Bold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+    grid-column: 1 / -1;
+
+    @include on-desktop {
+      grid-column: span 4;
+    }
+
+    @include button-style;
+    }
+  }
