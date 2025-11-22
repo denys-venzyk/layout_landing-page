@@ -24,17 +24,17 @@
     }
 
     &:focus {
-      outline: 1px solid $main-color;
+      outline: 1px solid #292929;
 
       &::placeholder {
-        color: $main-color;
+        color: #292929;
       }
     }
 
     &:hover {
       border: 1px solid #D5D7DE;
       &::placeholder {
-        color: $main-color;
+        color: #292929;
       }
     }
 
@@ -52,7 +52,7 @@
     @include button-style;
 
     font-style: Bold;
-    font-size: $main-font-size;
+    font-size: 16px;
     font-weight: 700;
     line-height: 27px;
     margin-bottom: 24px;
