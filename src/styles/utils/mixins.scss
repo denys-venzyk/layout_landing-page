@@ -37,15 +37,15 @@
 
 @mixin button-style {
     height: 56px;
-    background-color: #292929;
+    background-color: $main-color;
     color: #fff;
-    border: 2px solid #292929;
+    border: 2px solid $main-color;
     border-radius: 8px;
     transition-duration: 200ms;
 
     &:hover {
       background-color: #F8F8FA;
-      color: $main-text-color;
+      color: $main-color;
       border: 2px solid #F0F1F4;
     }
 
