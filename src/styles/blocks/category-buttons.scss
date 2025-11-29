@@ -2,7 +2,7 @@
   @include page-grid;
   &__button {
     font-style: Bold;
-    font-size: 16px;
+    font-size: $main-font-size;
     font-weight: 700;
     line-height: 27px;
     grid-column: 1 / -1;

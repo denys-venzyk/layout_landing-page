@@ -15,9 +15,9 @@
 
   &__content {
     font-family: "Space Mono", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
+    font-weight: $main-font-weight;
+    font-size: $main-font-size;
+    line-height: $main-line-height;
     padding-bottom: 104px;
 
     grid-column: 1 / -1;

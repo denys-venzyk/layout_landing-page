@@ -1,7 +1,7 @@
 .contacts {
   &__content {
     @include page-grid;
-    
+
     row-gap: 16px;
   }
 
@@ -24,17 +24,17 @@
     }
 
     &:focus {
-      outline: 1px solid #292929;
+      outline: 1px solid $main-color;
 
       &::placeholder {
-        color: #292929;
+        color: $main-color;
       }
     }
 
     &:hover {
       border: 1px solid #D5D7DE;
       &::placeholder {
-        color: #292929;
+        color: $main-color;
       }
     }
 
@@ -52,7 +52,7 @@
     @include button-style;
 
     font-style: Bold;
-    font-size: 16px;
+    font-size: $main-font-size;
     font-weight: 700;
     line-height: 27px;
     grid-column: 1 / -1;
@@ -84,9 +84,9 @@
     margin: 0;
     padding: 0;
     font-family: "Space Mono", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
+    font-weight: $main-font-weight;
+    font-size: $main-font-size;
+    line-height: $main-line-height;
     color: #191919;
     margin-bottom: 64px;
 
@@ -102,9 +102,9 @@
   &__link {
     margin: 0;
     font-family: "Space Mono", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
+    font-weight: $main-font-weight;
+    font-size: $main-font-size;
+    line-height: $main-line-height;
     text-decoration: none;
     color: #191919;
     margin-bottom: 24px;
