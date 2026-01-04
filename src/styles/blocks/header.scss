@@ -12,7 +12,11 @@
     letter-spacing: 0;
 
     @include on-tablet {
-      font-size: 40px;
+      font-size: 48px;
+    }
+
+    @include on-desktop {
+      font-size: 56px;
     }
   }
 

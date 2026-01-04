@@ -28,7 +28,7 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="images/Logos/nothing_logo.png"
+      href="images/Logos/nothing_logo.svg"
     />
     <script
       src="scripts/main.js"
@@ -43,12 +43,17 @@
             <a href="#" class="top-bar__logo-link">
               <img
                 class="top-bar__logo"
-                src="images/logos/nothing_logo.png"
+                src="images/logos/nothing_logo.svg"
                 alt="Nothing logo"
               />
             </a>
             <div class="top-bar__icons">
-              <a href="#" class="icon icon--phone"></a>
+              <div class="reveal-button">
+                <div class="reveal-button__icon">
+                  <a href="#" class="icon icon--phone"></a>
+                </div>
+                <span class="reveal-button__text">+1 234 5555-55-55</span>
+              </div>
               <a href="#menu" class="icon icon--burger"></a>
             </div>
           </div>
@@ -69,7 +74,7 @@
           <a href="#" class="top-bar__logo-link">
             <img
               class="top-bar__logo"
-              src="images/logos/nothing_logo.png"
+              src="images/logos/nothing_logo.svg"
               alt="Nothing logo"
             />
           </a>
@@ -110,7 +115,7 @@
             <div class="recommended__products">
               <article class="product recommended__product">
                 <img
-                  src="images/products/Nothing-Phone.png"
+                  src="images/products/Nothing-Phone.svg"
                   alt="Nothing Phone"
                   class="product__photo"
                 >
@@ -124,7 +129,7 @@
               </article>
               <article class="product recommended__product">
                 <img
-                  src="images/products/Nothing-ear-buds.png"
+                  src="images/products/Nothing-ear-buds.svg"
                   alt="Nothing Ear Buds"
                   class="product__photo"
                 >
@@ -137,7 +142,7 @@
               </article>
               <article class="product recommended__product">
                 <img
-                  src="images/products/Nothing-ear-buds(stick).png"
+                  src="images/products/Nothing-ear-buds(stick).svg"
                   alt="Nothing Ear Buds(Stick)"
                   class="product__photo"
                 >
@@ -276,20 +281,22 @@
               placeholder="Email"
               class="contacts__input contacts__input--small"
             >
-            <textarea
-              type="text"
-              name="message"
-              id="message"
-              placeholder="Message"
-              class="contacts__input contacts__input--large"
-            ></textarea>
-            <input
-              type="submit"
-              name="send"
-              id="send"
-              class="contacts__button"
-              value="Send"
-            >
+            <form onsubmit="this.reset(); return false;" class="contacts__form">
+              <textarea
+                type="text"
+                name="message"
+                id="message"
+                placeholder="Message"
+                class="contacts__input contacts__input--large contacts__input--message"
+              ></textarea>
+              <button
+                type="submit"
+                name="send"
+                id="send"
+                class="contacts__button"
+                value="Send"
+              >Send</button>
+            </form>
 
             <div class="contacts__description">
               <h3 class="contacts-title">Phone</h3>

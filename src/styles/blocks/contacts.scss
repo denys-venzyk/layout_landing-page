@@ -5,10 +5,20 @@
     row-gap: 16px;
   }
 
+  &__form {
+    display: grid;
+    grid-column: 1 / -1;
+
+    @include on-desktop {
+      grid-column: 1 / 6;
+    }
+  }
+
   &__input {
     font-family: "Space Mono", sans-serif;
     grid-column: 1 / -1;
     resize: none;
+    padding-left: 16px;
 
     @include on-desktop {
       grid-column: 1 / 6;
@@ -45,6 +55,10 @@
     &--large {
       height: 148px;
       margin-bottom: 16px;
+    }
+
+    &--message {
+      padding: 16px 14px;
     }
   }
 
