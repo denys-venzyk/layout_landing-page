@@ -6,7 +6,7 @@
   }
 
   &__product {
-    grid-column: 1 / -1 ;
+    grid-column: 1 / -1;
 
     @include on-desktop {
       grid-column: span 4;

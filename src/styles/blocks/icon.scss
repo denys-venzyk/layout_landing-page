@@ -20,12 +20,11 @@
     background-image: url(../images/icons/icon_burger.svg);
 
     &:hover {
-    background-image: url(../images/icons/icon_burger_menu_hover.svg);;
-  }
+      background-image: url(../images/icons/icon_burger_menu_hover.svg);
+    }
   }
 
   &--close {
     background-image: url(../images/icons/icon_close.svg);
   }
 }
-
