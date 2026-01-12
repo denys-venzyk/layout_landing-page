@@ -71,14 +71,13 @@
     font-weight: 700;
     line-height: 27px;
     grid-column: 1 / -1;
-    margin-bottom: 32px;
 
     @include on-tablet {
-      margin-bottom: 74px;
+      margin-bottom: 16px;
     }
 
     @include on-desktop {
-      margin-bottom: 120px;
+      margin-bottom: 72px;
       grid-column: 1 / 6;
     }
   }
